@@ -1,0 +1,128 @@
+$main-font: "Archivo:ital", sans-serif;
+$main-colour: #DAB6C4;
+
+@import "./weather-icons.min.css";
+@import "./weather-icons-wind.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DynaPuff:wght@400..700&family=Share+Tech&family=Signika+Negative:wght@300..700&display=swap');
+
+.s-content header{
+    font-size: 3rem;
+    font-family: $main-font;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.s-content #g-select{
+    font-size: 2rem;
+    font-family: $main-font;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.loading{
+    opacity: 0.5;
+}
+
+.s-content #g-dropdown{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    font-family: $main-font;
+    background-color: #E2ACC1;
+    border-radius:20px;
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.s-content #s-weatherDisplay{
+    font-size: 3.5rem;
+    font-family: $main-font;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+.s-content .s-weatherDetails{
+    display:flex;
+}
+
+body{
+    background-color: $main-colour;
+}
+
+.s-content .g-loading-overlay {
+    position: fixed;
+    z-index: 999;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    overflow: show;
+    margin: auto;
+    display:block;
+    background-color:$main-colour;
+  }
+
+.s-content #s-dataError{
+    font-size: 3.5rem;
+    font-family: $main-font;
+    padding-left: 20px;
+    white-space: pre-wrap;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+.s-content #s-temp{
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: $main-font;
+}
+
+
+.s-content #s-visibility{
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: $main-font;
+}
+
+.s-content #s-humidity{
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: $main-font;
+}
+
+.s-content #s-air{
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: $main-font;
+}
+
+.s-content #s-wind{
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: $main-font;
+}
+
+.s-content #g-footer{
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .s-content .s-weatherDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
